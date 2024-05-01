@@ -11,6 +11,7 @@
             background-color: #F5F5F5;
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         }
+
         .container {
             background-color: #E9E9E9;
             margin: auto;
@@ -24,26 +25,75 @@
             overflow: hidden;
 
         }
-        .header{
+
+        .header {
             padding: 40px;
         }
-        .flex-container{
+
+        .flex-container {
             display: flex;
-            background-color: #006A6A;
             justify-content: space-around;
-            padding: 20px;
         }
-        .header-title{
+
+        .header-title {
             color: #006F6F;
             font-size: 32px;
             font-weight: 700;
             margin-bottom: 20px;
         }
-        .header-subtitle{
+
+        .header-subtitle {
             color: #009E9E;
             font-size: 18px;
             font-weight: 500;
             margin-bottom: 15px;
+        }
+
+        .coluna1 {
+            background-color: #006A6A;
+            width: 50%;
+            padding: 20px;
+            color: #FFFFFF;
+        }
+
+        .coluna2 {
+            background-color: #009E9E;
+            width: 50%;
+            padding: 20px;
+            color: #FFFFFF;
+        }
+
+        .subscription-title {
+            font-size: 18px;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .price {
+            font-size: 26px;
+            font-weight: 700;
+        }
+
+        .month {
+            font-size: 15px;
+            font-style: italic;
+            margin-left: 15px;
+        }
+
+        .button {
+            width: 100%;
+            padding: 15px 32px;
+            color: #006A6A;
+            font-size: 16px;
+            border-radius: 4px;
+            border: none;
+            background-color: #CCCCCC;
+            margin-top: 20px;
+            cursor: pointer;
+        }
+
+        .button:hover {
+            background-color: #E9E9E9;
         }
     </style>
 
@@ -54,7 +104,7 @@
     <div class="container">
         <div class="header">
             <div class="header-title">
-            Entre para a nossa comunidade!
+                Entre para a nossa comunidade!
             </div>
             <div class="header-subtitle">
                 Faça a sua assinatura agora e ganhe 30% de desconto!
@@ -65,11 +115,30 @@
             </div>
         </div>
         <div class="flex-container">
-            <div>
-                Coluna 1
+            <div class="coluna1">
+                <div class="subscription-title">
+                    Assinatura mensal:
+                </div>
+                <div>
+                    <span class="price">R$ 99,90</span>
+                    <span class="month">por mês.</span>
+                </div>
+                <div>
+                    Cancele a qualquer momento.
+                </div>
+
+                <button class="button">Assine agora</button>
             </div>
-            <div>
-                Coluna 2
+            <div class="coluna2">
+                <div>
+                    Você terá acesso:<br><br>
+                    <li>Projetos exclusivos</li>
+                    <li>Tutorias</li>
+                    <li>Lives semanais</li>
+                    <li>Material didático especializado</li>
+                    <li>Fórum</li>
+                    <li>Ofertas de emprego</li>
+                </div>
             </div>
         </div>
     </div>
